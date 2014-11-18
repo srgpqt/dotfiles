@@ -1,0 +1,41 @@
+[user]
+	name = Serge Paquet
+	email = srgpqt@gmail.com
+[color]
+	ui = auto
+[alias]
+	st = status
+	br = branch
+	co = checkout
+	ci = commit
+	d  = diff
+	ks = difftool -t Kaleidoscope
+	dt = difftool
+	l  = log --graph --oneline --decorate --color
+	rbi = rebase --interactive
+	rba = rebase --abort
+	rbc = rebase --continue
+	rbs = rebase --skip
+[core]
+	excludesfile = ~/.gitignore_global
+[difftool "sourcetree"]
+	cmd = /usr/local/bin/ksdiff -- \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /usr/local/bin/kdiff3 --merge \"$BASE\" \"$LOCAL\" \"$REMOTE\"
+	trustExitCode = true
+[difftool "Kaleidoscope"]
+	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+[diff]
+	tool = Kaleidoscope
+[difftool]
+	prompt = false
+[mergetool "Kaleidoscope"]
+	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
+	trustExitCode = true
+[mergetool]
+	prompt = false
+[merge]
+	tool = kdiff3
+[push]
+	default = simple

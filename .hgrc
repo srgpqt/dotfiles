@@ -1,0 +1,38 @@
+[ui]
+username = Serge Paquet <srgpqt@gmail.com>
+ignore = ~/.hgignore_global
+merge = kdiff3
+
+[alias]
+rnb = revert --no-backup
+unphase = phase --force --draft
+
+[extensions]
+graphlog =
+pager =
+rebase =
+color =
+mq =
+purge =
+record =
+mercurial_keyring =
+hgext.extdiff =
+hgext.convert =
+histedit =
+
+[extdiff]
+cmd.kdiff3 =
+cmd.ksdiff = /usr/local/bin/ksdiff
+opts.ksdiff = --changeset --wait --filelist
+
+[merge-tools]
+kdiff3.args = $base $local $other -o $output
+Kaleidoscope.executable = /usr/local/bin/ksdiff
+Kaleidoscope.args = --merge --output $output --base $base -- $local $other
+
+[merge-tools-opendiff]
+filemerge.executable = ~/.bin/opendiff-w
+filemerge.args = $local $other -ancestor $base -merge $output
+
+[pager]
+pager = LESS='FSRX' less

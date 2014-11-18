@@ -1,0 +1,16 @@
+
+alias e="subl"
+alias ll="ls -lh"
+alias be="bundle exec"
+
+export CLICOLOR="1"
+export EDITOR="subl --wait"
+
+export PATH="$HOME/.bin:$PATH"
+export PATH="$PATH:/usr/local/share/npm/bin"
+export PATH="/sbin:/usr/local/sbin:/usr/local/bin:$PATH"
+
+export NODE_PATH="/usr/local/share/npm/lib/node_modules"
+export PYTHONPATH="/usr/local/lib/svn-python:/usr/local/lib/python2.7/site-packages:$PYTHONPATH"
+
+chruby 2.1
