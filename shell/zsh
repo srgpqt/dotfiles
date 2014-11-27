@@ -1,0 +1,5 @@
+source ~/.dotfiles/shell/any
+
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+export PS1="%~ ⚡  "

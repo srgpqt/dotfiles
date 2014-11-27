@@ -1,2 +1,3 @@
-
 source ~/.dotfiles/shell/any
+
+export PS1="\w ⚡  "

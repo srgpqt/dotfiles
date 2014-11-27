@@ -1,3 +1,2 @@
 
-source ~/.profile
-source ~/.bashrc
+source ~/.dotfiles/shell/bash
