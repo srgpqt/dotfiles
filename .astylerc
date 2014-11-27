@@ -1,0 +1,30 @@
+# Brackets
+add-brackets
+attach-inlines
+break-closing-brackets
+
+# Indentation
+style=kr
+convert-tabs
+indent=tab
+indent-cases
+indent-namespaces
+indent-preproc-define
+indent-col1-comments
+
+# Padding
+delete-empty-lines
+break-blocks
+unpad-paren
+pad-oper
+pad-paren-in
+align-pointer=type
+max-code-length=80
+
+# Objective-C
+align-method-colon
+pad-method-prefix
+pad-method-colon=none
+
+# Other
+lineend=linux
