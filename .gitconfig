@@ -4,23 +4,40 @@
 [color]
 	ui = auto
 [alias]
+	a  = add
+	d  = diff
+	s  = status
+	dh = diff HEAD
 	st = status
 	br = branch
 	co = checkout
 	ci = commit
-	d  = diff
+	aa = add -A
+	wc = whatchanged
 	ks = difftool -t Kaleidoscope
 	dt = difftool
-	l  = log --graph --oneline --decorate --color
+	mt = mergetool
+	cp = cherry-pick
+	can = !git commit --amend --date=\"$(date '+%Y-%m-%d %H:%M:%S')\"
+
+	l  = log --graph --decorate --oneline
+	la = log --graph --decorate --oneline --all
+	gl = log --graph --decorate
+	gla = log --graph --decorate --all
+	tip = log -1 --name-status
+	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+
+	rb = rebase
 	rbi = rebase --interactive
 	rba = rebase --abort
 	rbc = rebase --continue
 	rbs = rebase --skip
+	rbh = rebase HEAD@{1}
 [core]
 	excludesfile = ~/.gitignore_global
 [difftool "sourcetree"]
 	cmd = /usr/local/bin/ksdiff -- \"$LOCAL\" \"$REMOTE\"
-	path = 
+	path =
 [mergetool "sourcetree"]
 	cmd = /usr/local/bin/kdiff3 --merge \"$BASE\" \"$LOCAL\" \"$REMOTE\"
 	trustExitCode = true
