@@ -1,7 +1,11 @@
 syntax: glob
 
-*~
 .DS_Store
 .rbx
+.sass-cache
+*~
+*.d
+*.o
+*.a
 *.sublime-project
 *.sublime-workspace
