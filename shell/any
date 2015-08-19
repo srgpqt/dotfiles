@@ -2,6 +2,7 @@
 alias e="subl"
 alias ll="ls -lh"
 alias be="bundle exec"
+alias mm="bundle exec middleman"
 
 export CLICOLOR="1"
 export EDITOR="subl --wait"
