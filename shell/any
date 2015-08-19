@@ -17,3 +17,5 @@ export ANDROID_HOME=/usr/local/opt/android-sdk
 source /usr/local/opt/chruby/share/chruby/chruby.sh
 
 chruby ruby-2.2
+
+ssh-add ~/.ssh/id_rsa 2> /dev/null
