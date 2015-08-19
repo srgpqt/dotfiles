@@ -3,8 +3,9 @@
 find . -type f -iname '*.png' | while read path
 do
 	pngout -ks "$path"
-	for (( i = 0; i < 3; i++ ))
-	do
-		pngout -ks -r "$path"
-	done
+done
+
+find . -type f -iname '*.png' | while read path
+do
+	pngout -ks -r "$path"
 done
