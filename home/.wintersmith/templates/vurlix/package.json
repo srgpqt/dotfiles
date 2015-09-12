@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "wintersmith": "^2.2.1",
+    "wintersmith-browserify": "*",
+    "wintersmith-livereload": "*",
+    "wintersmith-stylus": "*"
+  },
+  "private": true
+}

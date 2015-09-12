@@ -1,0 +1,10 @@
+{
+  "locals": {
+    "title": "Bare minimum wintersmith site"
+  },
+  "plugins": [
+    "wintersmith-browserify",
+    "wintersmith-livereload",
+    "wintersmith-stylus"
+  ]
+}

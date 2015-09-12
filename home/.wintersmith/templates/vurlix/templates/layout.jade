@@ -1,0 +1,17 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    title= locals.title
+
+    link(rel='stylesheet' href='/styles/app.css')
+
+    != livereloadScript
+    script(src='/scripts/libs.js' type='text/javascript')
+    script(src='/scripts/app.js' type='text/javascript')
+
+  body
+    h1= page.title
+
+    block body
+      != page.html
