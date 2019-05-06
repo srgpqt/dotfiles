@@ -19,8 +19,4 @@ export ANDROID_HOME=/usr/local/opt/android-sdk
 
 export MPD_HOST=~/.mpd/socket
 
-source /usr/local/opt/chruby/share/chruby/chruby.sh
-
-chruby ruby-2.2
-
 ssh-add ~/.ssh/id_rsa 2> /dev/null
