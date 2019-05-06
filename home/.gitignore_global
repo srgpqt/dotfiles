@@ -5,5 +5,9 @@
 *.d
 *.o
 *.a
+*.orig
 *.sublime-project
 *.sublime-workspace
+npm-debug*log
+yarn-error.log
+.elasticbeanstalk
