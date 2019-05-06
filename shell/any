@@ -13,7 +13,7 @@ export PATH="$PATH:/usr/local/share/npm/bin"
 export PATH="$HOME/.bin:$PATH"
 
 export NODE_PATH="/usr/local/share/npm/lib/node_modules"
-export PYTHONPATH="/usr/local/lib/svn-python:/usr/local/lib/python2.7/site-packages:$PYTHONPATH"
+#export PYTHONPATH="/usr/local/lib/svn-python:/usr/local/lib/python2.7/site-packages:$PYTHONPATH"
 export ANDROID_HOME=/usr/local/opt/android-sdk
 
 export MPD_HOST=~/.mpd/socket
