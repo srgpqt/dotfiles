@@ -9,3 +9,4 @@ syntax: glob
 *.a
 *.sublime-project
 *.sublime-workspace
+_doc

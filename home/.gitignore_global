@@ -8,6 +8,7 @@
 *.orig
 *.sublime-project
 *.sublime-workspace
+_doc
 npm-debug*log
 yarn-error.log
 .elasticbeanstalk
