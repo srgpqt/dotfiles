@@ -5,6 +5,7 @@ alias be="bundle exec"
 alias mm="bundle exec middleman"
 alias qgit="git"
 
+export HISTSIZE=2000
 export CLICOLOR="1"
 export EDITOR="subl --wait"
 
